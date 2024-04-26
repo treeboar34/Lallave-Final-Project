@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div id = content>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Boosted.</div>
+            <nav class="navbar">
+                <ul class="navbar-menu">
+                    <li class="navbar-item">
+                <a href="homepage.html" class="nav-item">Home</a>
+            </li>
+                <li class="navbar-item dropdown">
+                <a href="#" class="dropdown-toggle">Units</a>
+                <ul class="dropdown-menu">
+                    <li><a href="units.html">Unit Types</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </li>
+                <li class="navbar-item">
+                <a href="facilities.html" class="nav-item">Facilities</a>
+            </li>
+                <li class="navbar-item">
+                <a href="contactus.html" class="nav-item">Contact Us</a>
+            </li>
+                <li class="navbar-item">
+                <a href="AboutUs.html" class="nav-item">About Us</a>
+            </li>
+
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contactpagebase">
+    <div class="contact-page">
+        <div id="contacttitle">
+        <h1>Contact Us</h1>
+    </div>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="name-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                <span class="error-message" id="phone-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="inquiry">Inquiry:</label>
+                <textarea id="inquiry" name="inquiry" rows="5" required></textarea>
+                <span class="error-message" id="inquiry-error"></span>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <div id="confirmation" class="hidden">Thank you for contacting us! We'll get back to you soon.</div>
+    </div>
+</div>
+    <script src="contact.js"></script>
+</body>
+
+</html>
+
+   
